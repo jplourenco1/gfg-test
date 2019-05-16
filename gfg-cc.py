@@ -8,13 +8,11 @@ numoflines = len(lines)
 print ("Number of Lines:",numoflines)
 
 #2 count number fo lines with text TEST and TERRY in field 12
-keyword1 = 'TEST'
-keyword2 = 'TERRY'
 countword = 0
 result=[]
 for line in lines:
     field12 = line.split('\t')[11]
-    if keyword1 == field12 or keyword2 == field12:
+    if keyword1 == 'TEST' or keyword2 == 'TERRY':
         countword += 1
 print("Number of lines with TEST and TERRY:", countword)
 
