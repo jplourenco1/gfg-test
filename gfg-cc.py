@@ -12,7 +12,7 @@ countword = 0
 result=[]
 for line in lines:
     field12 = line.split('\t')[11]
-    if field12 == 'TEST' or field2 == 'TERRY':
+    if field12 == 'TEST' or field12 == 'TERRY':
         countword += 1
 print("Number of lines with TEST and TERRY:", countword)
 
