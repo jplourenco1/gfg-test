@@ -46,7 +46,7 @@ outfile2.close()
 count=0
 for line in lines:
     field4  = line.split('\t')[3]
-    if field4 > '100' and field4 < '400':
+    if field4 > 100 and field4 < 400:
         count+=1
 print("Number of lines where field 4 is between 100 and 400", count)
 file.close()
